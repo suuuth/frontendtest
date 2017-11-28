@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FrontEndTest</title>
+        <meta charset="utf-8">
+
+<!-- css doc for computers -->
+ <!--       <link rel="stylesheet" type="text/css" href="css.css" >
+-->
+
+<!-- change max-device-width to the width of devices once done -->
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1920px)" href="css-for-devices.css" >
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="search">
+                <img src="masthead-helmet.svg" alt="masthead-helmet">
+                <div class="searchBox">
+                    <input type="text" class="searchTerm" placeholder="Search...">
+                </div>
+            </div>
+                <div class="nav">
+                    <img src="logo.svg" alt="logo">
+                    <a href="#" class="mainNav">Link Name</a>
+                    <a href="#" class="mainNav">Link Name</a>
+                    <a href="#" class="mainNav">Link Name</a>
+                    <div class="dropdown">
+                        Link Name <img src="arrow 3.svg" alt="arrow 3">
+                        <div class="dropdown-content">
+                            <ul>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="Hamburger.svg" alt="Hamburger" class="hamburger" onclick="showBurgerContent()">
+                    <div id="hamburgerContent">
+                        <ul>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                            <li><a href="#" class="dropNav">Link Name</a></li>
+                        </ul>
+                        <div class="mobileDropdown" onclick="showMobileDropContent()">Link Name<img src="arrow 3.svg" alt="arrow 3">
+                            <ul class="mobileDropContent">
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <input type="search" name="mobileSearch" placeholder="Search">
+                        <div></div>
+                    </div>
+                </div>
+            <div class="headerimg">
+                <div>
+                <h1>This is a Header!<br>
+                <small>This is a subheader! It goes right underneath!</small></h1>
+                </div>
+            </div>
+            <div class="mainArticle">
+                <div>
+                <p>Lorem ipsum dolor sit amet, lacinia porttitor lectus pellentesque justo, egestas condimentum, nec vehicula vestibulum suscipit id et eleifend, justo cras in eget in vehicula. Viverra eu orci laoreet eget facilisis elit. Arcu eleifend integer leo sed. Netus mauris tempor, vestibulum dapibus pretium nullam pellentesque suspendisse metus, porta pellentesque eget amet, per ante aliquam. Suspendisse a, reiciendis purus et ut placerat lectus, libero sed tincidunt aenean potenti nec nec. Nibh deserunt ipsum, mauris aenean. 
+                    </p>
+                <button>Learn More</button>
+                </div>
+            </div>
+            <div class="slider">
+                <img class="sliderPlaceholder" src="sliderPlaceholder1.jpg" alt="placeholder img"/>
+                <img class="sliderPlaceholder" src="sliderPlaceholder2.jpg" alt="placeholder img"/>
+                <img class="sliderPlaceholder" src="sliderPlaceholder3.jpg" alt="placeholder img"/>
+                <img class="sliderPlaceholder" src="sliderPlaceholder4.jpg" alt="placeholder img"/>
+                <img class="sliderPlaceholder" src="sliderPlaceholder5.jpg" alt="placeholder img"/>  
+                <div class="leftbtn" onclick="plusDivs(-1)">
+                    <img src="arrow.svg"/>
+                </div>
+                <div class="sliderDots">
+                    <span class="dots" onclick="currentDiv(1)"></span>
+                    <span class="dots" onclick="currentDiv(2)"></span>
+                    <span class="dots" onclick="currentDiv(3)"></span>
+                    <span class="dots" onclick="currentDiv(4)"></span>
+                    <span class="dots" onclick="currentDiv(5)"></span>
+                </div>
+                <div class="sliderControl">
+                    <p>Slide Title - This is an Image Slider</p>
+                </div>
+                <div class="rightbtn" onclick="plusDivs(1)">
+                    <img src="arrow 2.svg">
+                </div>
+            </div> 
+            <div class="featuredProjects">
+                <div>
+                    Featured Research Projects
+                    <div class="projects">
+                    <div class="projectRow">
+                        <div class="project">
+                            <img src="placeholder.jpg" alt="placeholder">
+                            <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
+                            <div>View Project</div>
+                        </div>
+                        <div class="project">
+                            <img src="placeholder.jpg" alt="placeholder image">
+                            <p>The African Online Digital Library is an open access digital library of African cultural heritage materials in collaboration with museums, archives, scholars, around the world.</p>
+                            <div>View Project</div>
+                        </div>
+                        <div class="project">
+                            <img src="placeholder.jpg" alt="placeholder image">
+                            <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
+                            <div>View Project</div>
+                        </div>
+                    </div>
+                    <div class="projectRow">
+                        <div class="project">
+                            <img src="placeholder.jpg" alt="placeholder image">
+                            <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
+                            <div>View Project</div>
+                        </div>
+                        <div class="project">
+                            <img src="placeholder.jpg" alt="placeholder image">
+                            <p>The African Online Digital Library is an open access digital library of African cultural heritage materials in collaboration with museums, archives, scholars, around the world.</p>
+                            <div>View Project</div>
+                        </div>
+                        <div class="project">
+                            <img src="placeholder.jpg" alt="placeholder image">
+                            <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
+                            <div>View Project</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footerWrap">
+                    <div>
+                        <a href="#" class="contact">Contact</a>
+                        <ul class="socBtn">
+                        <li><a href="#" ><img src="twitter.svg" alt="twitter" class="social"/></a></li>
+                        <li><a href="#" ><img src="facebook.svg" alt="facebook" class="social"/></a></li>
+                        <li><a href="#" ><span class="circle2"></span>&nbsp;<span class="circle2"></span></a></li>
+                        <li><a href="#" ><img src="youtube.svg" alt="youtube" class="social"/></a></li>
+                        <li><a href="#" ><img src="rss.svg" alt="rss" class="social"/></a></li>
+                        </ul>
+                    </div>
+                    <div class="footerSection2">
+                        <div class="footerImg">
+                        <img src="MichiganStateUniversity.svg" alt="Michigan State University">
+                        </div>
+                        <div class="footerInfo">
+                        <p class="firstline">Call us: <strong>(517) XXX-XXXX</strong> | Contact Information | Site Map | Privacy Statement | Site Accessibility</p>
+                        <p class="lastline">Call MSU <strong>(517) 355-1855</strong> | Visit <strong>msu.edu</strong> | MSU is an affirmative-action, equal-opportunity employer.<br>
+                        <strong>SPARTANS WILL</strong> | c Michigan State University Board of Trustees</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js.js" type="text/javascript"></script>    
+    </body>
+</html>
