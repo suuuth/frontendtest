@@ -3,13 +3,7 @@
     <head>
         <title>FrontEndTest</title>
         <meta charset="utf-8">
-
-<!-- css doc for computers -->
- <!--       <link rel="stylesheet" type="text/css" href="css.css" >
--->
-
-<!-- change max-device-width to the width of devices once done -->
-        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1920px)" href="css-for-devices.css" >
+        <link rel="stylesheet" type="text/css" href="css.css" >
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     </head>
     <body>
@@ -48,7 +42,7 @@
                             <li><a href="#" class="dropNav">Link Name</a></li>
                             <li><a href="#" class="dropNav">Link Name</a></li>
                         </ul>
-                        <div class="mobileDropdown" onclick="showMobileDropContent()">Link Name<img src="arrow 3.svg" alt="arrow 3">
+                        <div class="mobileDropdown" onclick="showMobileDropContent()">Link Name&nbsp;<img src="arrow 3.svg" alt="arrow 3">
                             <ul class="mobileDropContent">
                                 <li><a href="#">Link Name</a></li>
                                 <li><a href="#">Link Name</a></li>
@@ -61,9 +55,10 @@
                     </div>
                 </div>
             <div class="headerimg">
+                <img src="mountains.png">
                 <div>
-                <h1>This is a Header!<br>
-                <small>This is a subheader! It goes right underneath!</small></h1>
+                    <h1>This is a Header!<br>
+                    <small>This is a subheader! It goes right underneath!</small></h1>
                 </div>
             </div>
             <div class="mainArticle">
@@ -82,15 +77,15 @@
                 <div class="leftbtn" onclick="plusDivs(-1)">
                     <img src="arrow.svg"/>
                 </div>
-                <div class="sliderDots">
-                    <span class="dots" onclick="currentDiv(1)"></span>
-                    <span class="dots" onclick="currentDiv(2)"></span>
-                    <span class="dots" onclick="currentDiv(3)"></span>
-                    <span class="dots" onclick="currentDiv(4)"></span>
-                    <span class="dots" onclick="currentDiv(5)"></span>
-                </div>
                 <div class="sliderControl">
                     <p>Slide Title - This is an Image Slider</p>
+                    <div class="sliderDots">
+                        <span class="circleSelected" onclick="currentDiv(1)"></span>
+                        <span class="dots" onclick="currentDiv(2)"></span>
+                        <span class="dots" onclick="currentDiv(3)"></span>
+                        <span class="dots" onclick="currentDiv(4)"></span>
+                        <span class="dots" onclick="currentDiv(5)"></span>
+                    </div>
                 </div>
                 <div class="rightbtn" onclick="plusDivs(1)">
                     <img src="arrow 2.svg">
@@ -100,40 +95,41 @@
                 <div>
                     Featured Research Projects
                     <div class="projects">
-                    <div class="projectRow">
-                        <div class="project">
-                            <img src="placeholder.jpg" alt="placeholder">
-                            <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
-                            <div>View Project</div>
+                        <div class="projectRow">
+                            <div class="project">
+                                <img src="placeholder.jpg" alt="placeholder">
+                                <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
+                                <div>View Project</div>
+                            </div>
+                            <div class="project">
+                                <img src="placeholder.jpg" alt="placeholder image">
+                                <p>The African Online Digital Library is an open access digital library of African cultural heritage materials in collaboration with museums, archives, scholars, around the world.</p>
+                                <div>View Project</div>
+                            </div>
+                            <div class="project">
+                                <img src="placeholder.jpg" alt="placeholder image">
+                                <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
+                                <div>View Project</div>
+                            </div>
                         </div>
-                        <div class="project">
-                            <img src="placeholder.jpg" alt="placeholder image">
-                            <p>The African Online Digital Library is an open access digital library of African cultural heritage materials in collaboration with museums, archives, scholars, around the world.</p>
-                            <div>View Project</div>
+                        <div class="projectRow">
+                            <div class="project">
+                                <img src="placeholder.jpg" alt="placeholder image">
+                                <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
+                                <div>View Project</div>
+                            </div>
+                            <div class="project">
+                                <img src="placeholder.jpg" alt="placeholder image">
+                                <p>The African Online Digital Library is an open access digital library of African cultural heritage materials in collaboration with museums, archives, scholars, around the world.</p>
+                                <div>View Project</div>
+                            </div>
+                            <div class="project">
+                                <img src="placeholder.jpg" alt="placeholder image">
+                                <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
+                                <div>View Project</div>
+                            </div>
                         </div>
-                        <div class="project">
-                            <img src="placeholder.jpg" alt="placeholder image">
-                            <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
-                            <div>View Project</div>
-                        </div>
-                    </div>
-                    <div class="projectRow">
-                        <div class="project">
-                            <img src="placeholder.jpg" alt="placeholder image">
-                            <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
-                            <div>View Project</div>
-                        </div>
-                        <div class="project">
-                            <img src="placeholder.jpg" alt="placeholder image">
-                            <p>The African Online Digital Library is an open access digital library of African cultural heritage materials in collaboration with museums, archives, scholars, around the world.</p>
-                            <div>View Project</div>
-                        </div>
-                        <div class="project">
-                            <img src="placeholder.jpg" alt="placeholder image">
-                            <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
-                            <div>View Project</div>
-                        </div>
-                    </div>
+                        <div class="projectRow"></div>
                     </div>
                 </div>
             </div>

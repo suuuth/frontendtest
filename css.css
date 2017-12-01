@@ -2,6 +2,8 @@
 
  body {
     background-color: #C6C6C6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
  }
 
  .wrap {
@@ -11,7 +13,7 @@
      left: 0;
      right: 0;
      margin: auto;
-     max-width: 1024px;
+     width: 100%;
      background: white;
  }
 
@@ -32,6 +34,7 @@
      padding-top: 0px;
      padding-bottom: 3px;
      border: 1px solid dimgrey;
+     text-decoration: none;
  }
  
  .searchTerm {
@@ -51,6 +54,7 @@
  .nav {
      background: #545454;
      text-align: right;
+     z-index: 3;
  }
 
  .nav > img {
@@ -63,9 +67,84 @@
     visibility: hidden;
  }
 
+ @media screen and (max-width:640px){
+    .searchBox {
+        visibility: hidden;
+        position: absolute;
+    }
+    .mainNav, .dropdown {
+        position: absolute;
+        z-index: -3;
+        visibility: hidden;
+    }
+    .nav {
+        position: relative;
+    }
+    .nav > img {
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+    .hamburger {
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: 2px;
+        margin-right: 2px;
+        cursor: pointer;
+        visibility: visible;
+    }
+ }
+
  #hamburgerContent {
+    background: #8c8c8c;
+    height: 721px;
+    width: 225px;
     position: absolute;
+    top: 42px;
+    right: -225px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    opacity: 0;
+    transition: 400ms;
+    z-index: 1;
+ }
+
+ #hamburgerContent > ul {
+    margin-top: 28px;
+    list-style: none;
+ }
+
+ #hamburgerContent > ul > li, #hamburgerContent > .mobileDropdown, #hamburgerContent > input {
+    margin-right: 10px;
+    margin-bottom: 27px;
+ }
+
+ .mobileDropdown {
+    cursor: pointer;
+ }
+
+ .mobileDropdown > ul {
+    list-style: none;
+    background-color: white;
+    position: absolute;
+    top:30px;
+    right: 10px;
     visibility: hidden;
+ }
+
+ .mobileDropdown > ul > li {
+    margin-bottom: 27px;
+ }
+
+  #hamburgerContent > hr {
+    margin-bottom: 30px;
+ }
+
+ #hamburgerContent > div:last-child {
+    height: 100%;
  }
 
  .mainNav:link, .mainNav:visited {
@@ -106,6 +185,7 @@
  .dropdown-content {
      opacity: 0;
      position: absolute;
+
      padding: 20px 10px 2px 40px;
      text-align: right;
      background: #545454;
@@ -120,7 +200,7 @@
     padding: 5px 5px 2px 40px;
  }
 
- .dropdown-content > ul > li > a {
+ .dropNav {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -134,6 +214,11 @@
     padding: 5px 0px;
  }
 
+ .dropNav:hover {
+    color: #ffa54f;
+    cursor: pointer;
+ }
+
  .dropdown:hover {
      color: #ffa54f;
      cursor: pointer;
@@ -141,31 +226,67 @@
 
  .dropdown:hover .dropdown-content {
      opacity: 1;
+     z-index: 1;
  }
 
  .headerimg {
-     background-image:url(mountains.png);
-     background-repeat: no-repeat;
-     background-position: center; 
      text-align: center;
      color: #545454;
+     margin-bottom: 0;
+     position: relative;
+ }
+
+ .headerimg > img {
+    width: 100%;
+    height: auto;
  }
 
  .headerimg > div {
-     padding: 130px;
-     font-family: 'Montserrat', sans-serif;
+     position: absolute;
+     margin: auto;
+     top: 30%;
+     bottom: 0;
+     left: 0;
+     right: 0;
  }
 
  .headerimg > div > h1 {
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 57px;    
+    font-size: 5em;
+    font-weight: 300;    
  }
 
  .headerimg > div > h1 > small {
-    font-size: 24px;
-    font-weight: 300; 
-    line-height: 29px;   
+    font-size: .5em;
+ }
+
+ @media screen and (max-width:1024px){
+    .headerimg > div {
+        top: 20%;
+    }
+
+    .headerimg > div > h1 {
+        font-size: 3.5em;
+    }
+ }
+
+ @media screen and (max-width:768px){
+    .headerimg > div {
+        top: 25%;
+    }
+
+    .headerimg > div > h1 {
+        font-size: 2.7em;
+    }
+ }
+
+ @media screen and (max-width:540px){
+    .headerimg > div {
+        top: 20%;
+    }
+
+    .headerimg > div > h1 {
+        font-size: 2em;
+    }
  }
 
  .mainArticle {
@@ -177,14 +298,19 @@
  }
 
  .mainArticle > div {
-     width: 63.48%;
+     width: 70%;
      margin: auto;
-     margin-top: 40px;
-     padding: 50px;
-     line-height: 34px;
+     margin-top: 0;
+     padding: 150px 0px 200px 0px;
+     line-height: 80px;
      font-family: 'Monsterrat', sans-serif; 
-     font-size: 14px;
+     font-size: 20px;
      font-weight: 300;
+ }
+
+ .mainArticle > div > p {
+    padding-top: 100px;
+    padding-bottom: 100px;
  }
 
  .mainArticle > div > button {
@@ -195,6 +321,46 @@
      box-shadow: 0 5px 11px 0 rgba(0,0,0,0,0.06);
      border: none;
      margin: 50px;
+     transition: 2ms;
+     text-decoration: none;
+ }
+
+ @media screen and (max-width:1280px){
+     .mainArticle > div {
+        line-height: 60px;
+        padding: 100px 0px 100px 0px;
+     }
+     .mainArticle > div > p {
+        padding-bottom: 25px;
+     }
+ }
+
+ @media screen and (max-width:768px){
+     .mainArticle > div {
+        font-size: 1.1em;
+        line-height: 55px;
+        padding: 20px 0px 100px 0px;
+     }
+     .mainArticle > div > p {
+        padding-bottom: 25px;
+     }
+     .mainArticle > div > button {
+        width: 35%;
+     }
+ }
+
+ @media screen and (max-width:540px){
+    .mainArticle > div {
+        font-size: 1em;
+        line-height: 45px;
+        padding: 20px 0px 100px 0px;
+     }
+     .mainArticle > div > p {
+        padding-bottom: 25px;
+     }
+     .mainArticle > div > button {
+        width: 50%;
+     }
  }
 
  .mainArticle > div > button:hover {
@@ -204,13 +370,16 @@
  .slider {
      background: white;
      position: relative;
-     height: 464px;
+ }
+
+ .slider > div {
+    margin-bottom:5px;
  }
 
  .sliderPlaceholder {
      width: 100%;
-     height: 100%;
-     margin: none;
+     height: auto;
+     margin-bottom: 0px;
      padding: none;
      display: none;
  }
@@ -266,9 +435,7 @@
     z-index: 0;
     text-align: center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 300;
     line-height: 19px;
  }
 
@@ -303,8 +470,30 @@
     left: 0;
  }
 
+ @media screen and (max-width: 640px) {
+    .slider > img {
+        opacity: 0.7;
+    }
+    .sliderControl {
+        opacity: 1;
+        background: none;
+        bottom: 30%;
+    }
+    .sliderDots {
+        margin-bottom: -85px;
+    }
+    .leftbtn, .rightbtn {
+        padding: 0px 30px;
+        height: 98.5%;
+        background: none;
+    }
+    .leftbtn > img, .rightbtn > img {
+        padding-top: 150px;
+    }
+ }
+
  .featuredProjects {
-    padding-top: 20px;
+     padding-top: 20px;
      background: white;
      align-content: center;
  }
@@ -318,7 +507,7 @@
      line-height: 29px;
      margin-top: 60px;
      padding-top: 30px;
-     overflow: hidden; 
+     overflow: hidden;
  }
 
  .projects{
@@ -482,6 +671,17 @@
  .footerInfo {
      display: inline-block;
      margin-left: 10px;
+ }
+
+ @media screen and (max-width:768px){
+    .socBtn {
+        margin-top: 60px;
+    }
+    .footerInfo {
+        position: absolute;
+        z-index: -3;
+        visibility: hidden;
+    }
  }
 
  .firstline {
