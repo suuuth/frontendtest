@@ -23,15 +23,15 @@
                         Link Name <img src="arrow 3.svg" alt="arrow 3">
                         <div class="dropdown-content">
                             <ul>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
-                            <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
+                                <li><a href="#" class="dropNav">Link Name</a></li>
                             </ul>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <li><a href="#" class="dropNav">Link Name</a></li>
                             <li><a href="#" class="dropNav">Link Name</a></li>
                         </ul>
-                        <div class="mobileDropdown" onclick="showMobileDropContent()">Link Name&nbsp;<img src="arrow 3.svg" alt="arrow 3">
+                        <div class="mobileDropdown" onclick="showMobileDropContent()">Link Name&nbsp;<img src="arrow 3.svg" alt="arrow 3" class="mobileDropArrow">
                             <ul class="mobileDropContent">
                                 <li><a href="#">Link Name</a></li>
                                 <li><a href="#">Link Name</a></li>
@@ -74,22 +74,16 @@
                 <img class="sliderPlaceholder" src="sliderPlaceholder3.jpg" alt="placeholder img"/>
                 <img class="sliderPlaceholder" src="sliderPlaceholder4.jpg" alt="placeholder img"/>
                 <img class="sliderPlaceholder" src="sliderPlaceholder5.jpg" alt="placeholder img"/>  
-                <div class="leftbtn" onclick="plusDivs(-1)">
-                    <img src="arrow.svg"/>
+                <div class="sliderDots">
+                    <span class="circleSelected" onclick="currentDiv(1)"></span>
+                    <span class="dots" onclick="currentDiv(2)"></span>
+                    <span class="dots" onclick="currentDiv(3)"></span>
+                    <span class="dots" onclick="currentDiv(4)"></span>
+                    <span class="dots" onclick="currentDiv(5)"></span>
                 </div>
-                <div class="sliderControl">
-                    <p>Slide Title - This is an Image Slider</p>
-                    <div class="sliderDots">
-                        <span class="circleSelected" onclick="currentDiv(1)"></span>
-                        <span class="dots" onclick="currentDiv(2)"></span>
-                        <span class="dots" onclick="currentDiv(3)"></span>
-                        <span class="dots" onclick="currentDiv(4)"></span>
-                        <span class="dots" onclick="currentDiv(5)"></span>
-                    </div>
-                </div>
-                <div class="rightbtn" onclick="plusDivs(1)">
-                    <img src="arrow 2.svg">
-                </div>
+                <div id="s" class="leftbtn" onclick="plusDivs(-1)"><img src="arrow.svg"/></div>
+                <div id="s" class="sliderControl"><p>Slide Title - This is an Image Slider</p></div>
+                <div id="s" class="rightbtn" onclick="plusDivs(1)"><img src="arrow 2.svg"></div>
             </div> 
             <div class="featuredProjects">
                 <div>

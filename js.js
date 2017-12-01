@@ -32,10 +32,11 @@ function  showBurgerContent(){
 }
 
 function showMobileDropContent(){
-  var q = document.getElementByClassName("mobileDropContent");
-  if (q.style.visibility == "hidden") {
-    q.style.visibility = "visible";
+  var a = document.getElementsByClassName("mobileDropArrow");
+  if (a.style.webkitTransform = "rotate(0deg)"){
+    a.style.webkitTransform = "rotate(180deg)";
+  console.log("if check is working")
   } else {
-    q.style.visibility = "hidden";
+    a.style.webkitTransform = "rotate(0deg)";
   }
 }
