@@ -1,0 +1,26 @@
+todo
+
+mobile menu
+	-height should be 100% 						    		fixed?							
+	-make mobile dropdown work 									  made dropdown arrow responsive 																-still need to made dropmenu 																 appear 
+	-dropdown menu still doesn't show						FIXED
+	-style mobile search box									  can't login to invision to see 																how they want it styled
+
+general
+	-not all things should scale
+		-distances between elements
+		-chunks of white space
+	-make Learn More button larger 							FIXED
+
+Slider
+	-dots are not working									FIXED
+	-arrow buttons need to scale properly			  		FIXED
+
+Featured Projects
+	-on window collapse, make it
+	 collapse to 2/2/2 rather than 2/1/2/1					FIXED
+
+Footer
+	-when switching to mobile width, the					FIXED
+	buttons should collapse at the same time
+	the MSU section changes

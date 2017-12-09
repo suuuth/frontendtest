@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>FrontEndTest</title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css.css" >
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
@@ -42,16 +43,15 @@
                             <li><a href="#" class="dropNav">Link Name</a></li>
                             <li><a href="#" class="dropNav">Link Name</a></li>
                         </ul>
-                        <div class="mobileDropdown" onclick="showMobileDropContent()">Link Name&nbsp;<img src="arrow 3.svg" alt="arrow 3" class="mobileDropArrow">
-                            <ul class="mobileDropContent">
-                                <li><a href="#">Link Name</a></li>
-                                <li><a href="#">Link Name</a></li>
-                                <li><a href="#">Link Name</a></li>
-                            </ul>
+                        <div class="mobileDropdown">Link Name <img src="arrow 3.svg" alt="arrow 3" class="mobileDropArrow">
                         </div>
+                        <ul class="mobileDropContent">
+                            <li><a href="#">Link Name</a></li>
+                            <li><a href="#">Link Name</a></li>
+                            <li><a href="#">Link Name</a></li>
+                        </ul>
                         <hr>
-                        <input type="search" name="mobileSearch" placeholder="Search">
-                        <div></div>
+                        <input type="search" class="mobileSearch" placeholder="Search">
                     </div>
                 </div>
             <div class="headerimg">
@@ -63,8 +63,7 @@
             </div>
             <div class="mainArticle">
                 <div>
-                <p>Lorem ipsum dolor sit amet, lacinia porttitor lectus pellentesque justo, egestas condimentum, nec vehicula vestibulum suscipit id et eleifend, justo cras in eget in vehicula. Viverra eu orci laoreet eget facilisis elit. Arcu eleifend integer leo sed. Netus mauris tempor, vestibulum dapibus pretium nullam pellentesque suspendisse metus, porta pellentesque eget amet, per ante aliquam. Suspendisse a, reiciendis purus et ut placerat lectus, libero sed tincidunt aenean potenti nec nec. Nibh deserunt ipsum, mauris aenean. 
-                    </p>
+                <p>Lorem ipsum dolor sit amet, lacinia porttitor lectus pellentesque justo, egestas condimentum, nec vehicula vestibulum suscipit id et eleifend, justo cras in eget in vehicula. Viverra eu orci laoreet eget facilisis elit. Arcu eleifend integer leo sed. Netus mauris tempor, vestibulum dapibus pretium nullam pellentesque suspendisse metus, porta pellentesque eget amet, per ante aliquam. Suspendisse a, reiciendis purus et ut placerat lectus, libero sed tincidunt aenean potenti nec nec. Nibh deserunt ipsum, mauris aenean.</p>
                 <button>Learn More</button>
                 </div>
             </div>
@@ -75,7 +74,7 @@
                 <img class="sliderPlaceholder" src="sliderPlaceholder4.jpg" alt="placeholder img"/>
                 <img class="sliderPlaceholder" src="sliderPlaceholder5.jpg" alt="placeholder img"/>  
                 <div class="sliderDots">
-                    <span class="circleSelected" onclick="currentDiv(1)"></span>
+                    <span class="dots" onclick="currentDiv(1)"></span>
                     <span class="dots" onclick="currentDiv(2)"></span>
                     <span class="dots" onclick="currentDiv(3)"></span>
                     <span class="dots" onclick="currentDiv(4)"></span>
@@ -105,9 +104,14 @@
                                 <p>mbira is a platform to build, serve, and manage native and web-based mobile heritage experiences.</p>
                                 <div>View Project</div>
                             </div>
-                        </div>
+                            <div class="project hide">
+                                <img src="placeholder.jpg" alt="placeholder image">
+                                <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
+                                <div>View Project</div>
+                            </div>
+                        </div>    
                         <div class="projectRow">
-                            <div class="project">
+                            <div class="project fix">
                                 <img src="placeholder.jpg" alt="placeholder image">
                                 <p>What America Ate is an interactive website and online archive about food in the Great Depression, funded by the National Endowment for the Humanities</p>
                                 <div>View Project</div>
@@ -123,7 +127,6 @@
                                 <div>View Project</div>
                             </div>
                         </div>
-                        <div class="projectRow"></div>
                     </div>
                 </div>
             </div>
